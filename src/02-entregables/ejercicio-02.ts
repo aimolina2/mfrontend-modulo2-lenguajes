@@ -10,7 +10,7 @@ const numbers: string[] = ["uno", "dos", "tres"];
 const animals: string[] = ["perro", "gato", "conejo"]; // for next exercise
 const fruits: string[] = ["apple", "banana", "peach"]; // for next exercise
 
-const concat = (a: string[], b: string[]) => [...a, ...b]; // Implementation here.
+const concat = (a: string[], b: string[]) => [...a, ...b];
 
 console.log("CONCAT: ", concat(colors, numbers));
 
