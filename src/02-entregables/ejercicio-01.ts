@@ -18,9 +18,19 @@ console.log("HEAD: ", head(colors));
 const tail = ([, ...rest]: string[]) => rest; // Implementation here.
 console.log("TAIL: ", tail(colors));
 
-console.log("ORIGINAL ARRAY: ", colors);
-
 // 3. INIT
 // Implementa una función init (inmutable), tal que,
 // dado un array como entrada devuelva todos los elementos
 // menos el último. Utiliza los métodos que ofrece Array.prototype.
+
+const init = (list: string[]) => list.slice(0, -1);
+console.log("INIT:", init(colors)); // Implementation here.
+
+// 4. LAST
+// Implementa una función last (inmutable), tal que,
+// dado un array como entrada devuelva el último elemento.
+
+const last = (element: string[]) => element.at(-1); // Implementation here.
+console.log("LAST: ", last(colors));
+
+console.log("ORIGINAL ARRAY: ", colors);
